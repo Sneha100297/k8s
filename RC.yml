@@ -14,8 +14,8 @@ spec:
          version: 2.6.2
      spec:
        containers:
-         -name: myonlineapp-container
-          image: nginx
-          ports:
-          - containerPort: 80    
+         - name: myonlineapp-container
+           image: nginx
+           ports:
+            - containerPort: 80    
 
