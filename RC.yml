@@ -8,8 +8,8 @@ spec:
      app: myvertexapp
    template: 
      metadata:
-      name: complexpod
-      labels:
+       name: complexpod
+       labels:
          app: myvertexapp
      spec:
        containers:
