@@ -1,20 +1,19 @@
 apiVersion: v1
 kind: ReplicationController  
 metadata:
-  name: myonlineapp-rc
+  name: vertex-rc
 spec:
-   replicas: 2
+   replicas: 3
    selector:
-     app: myvertexpod
-     version: 2.6.2
+     app: myvertexapp
    template: 
      metadata:
-       labels:
-         app: myvertexpod
-         version: 2.6.2
+      name: complexpod
+      labels:
+         app: myvertexapp
      spec:
        containers:
-         - name: myonlineapp-container
+         - name: mynginx-container
            image: nginx
            ports:
             - containerPort: 80    
